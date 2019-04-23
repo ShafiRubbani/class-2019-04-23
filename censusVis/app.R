@@ -8,6 +8,11 @@
 #
 
 library(shiny)
+library(maps)
+library(mapproj)
+
+source("helpers.R")
+counties <- readRDS("data/counties.rds")
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
