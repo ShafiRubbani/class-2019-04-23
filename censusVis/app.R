@@ -61,6 +61,10 @@ server <- function(input, output) {
     paste("You have chosen a range that goes from ", input$range[1], " to ", input$range[2], ".", sep = "")
   })
   
+  output$map <- renderPlot({
+    percent_map( # some arguments )
+  })
+  
 }
 
 # Run the application 
